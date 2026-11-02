@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QifSift — QIF / QBO / QFX / OFX bank files to clean CSV — converted, flagged and re-checked</title>
+<style>
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif; background:#101623; color:#e8e4da; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 70px; }
+  h1 { font-size: 42px; line-height:1.12; margin: 0 0 8px; }
+  h1 .accent { color:#ffb454; }
+  .sub { font-size: 19px; color:#b9c0cf; line-height:1.55; margin: 0 0 26px; }
+  .card { background:#171e30; border:1px solid #2a3350; border-radius:12px; padding:20px 22px; margin: 22px 0; }
+  .card h2 { margin:0 0 10px; font-size:20px; color:#ffb454; }
+  .card p, .card li { color:#cfd5e2; line-height:1.6; font-size:16px; }
+  .cta { display:inline-block; background:#ffb454; color:#14100a; font-weight:bold; padding:14px 28px;
+          border-radius:10px; text-decoration:none; font-size:18px; margin: 10px 0 4px; }
+  .price { color:#b9c0cf; font-size:15px; }
+  ul { margin: 6px 0 6px 18px; padding:0; }
+  footer { color:#78829b; font-size:13px; margin-top:36px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Your bank downloads, <span class="accent">one clean CSV</span> — with the totals proven.</h1>
+  <p class="sub">QifSift converts QIF, QBO, QFX and OFX statement files into one clean CSV on your own computer, flags suspected duplicates instead of silently deleting them, and re-parses the finished CSV to prove the row count and the money total match the source exactly.</p>
+  <a class="cta" href="https://binbinster.gumroad.com/l/qifsift-bank-file-to-csv-converter">Get QifSift — $29</a>
+  <p class="price">One-time payment. Windows 10/11. No subscription, no account, runs 100% offline.</p>
+
+  <div class="card">
+    <h2>Verified, not vibes</h2>
+    <p>On seeded test files with planted defects: a QIF with an apostrophe-year date (03/16'26), a thousands-comma amount and an exact duplicate converted to 4 rows totalling 1083.56 — duplicate flagged, both normalizations recorded, an out-of-scope investment section warned about and skipped. A QBO with a timezone-suffixed date and a repeated FITID converted to 3 rows totalling 1199.06 with the duplicate FITID flagged. Both re-checks: PASS (acceptance test 13/13).</p>
+  </div>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <ul>
+      <li>Pick your .qif, .qbo, .qfx or .ofx file and an output folder.</li>
+      <li>QifSift parses every transaction, normalizes dates to ISO and amounts to plain numbers.</li>
+      <li>You get transactions.csv plus a report listing normalizations, suspected duplicates, warnings — and the re-check verdict.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Honest scope</h2>
+    <p>Bank, credit-card and cash sections convert. Investment sections (QIF !Type:Invst) are reported and skipped, never guessed at. Suspected duplicates are flagged in the report and KEPT in the CSV — deleting money records is your decision, not the tool's.</p>
+  </div>
+
+  <a class="cta" href="https://binbinster.gumroad.com/l/qifsift-bank-file-to-csv-converter">Get QifSift — $29</a>
+  <footer>QifSift runs entirely on your computer. Your statements never leave your machine. No upload, no account.</footer>
+</div>
+</body>
+</html>
