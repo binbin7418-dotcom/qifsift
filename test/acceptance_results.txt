@@ -1,0 +1,15 @@
+[PASS] qif: 4 bank records converted (duplicate kept) got 4
+[PASS] qif: net total 1083.56 got 1083.56
+[PASS] qif: duplicate flagged got 1
+[PASS] qif: two-digit-year + comma fixes recorded got ['two-digit year in date "03/16\'26" read as 2026', "thousands separator removed from amount '1,234.56'"]
+[PASS] qif: Invst section warned + skipped 
+[PASS] qif: re-check PASS 
+[PASS] qif: dates normalized to ISO 
+[PASS] qif: comma amount normalized 
+[PASS] ofx: 3 records converted got 3
+[PASS] ofx: net total 1199.06 got 1199.06
+[PASS] ofx: duplicate FITID flagged 
+[PASS] ofx: timezone suffix fix recorded 
+[PASS] ofx: re-check PASS 
+
+13/13 PASS
