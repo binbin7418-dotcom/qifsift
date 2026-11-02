@@ -1,0 +1,26 @@
+!Type:Bank
+D03/15/2026
+T-25.50
+PCoffee Shop
+MCoffee with Sam
+^
+D03/16'26
+T1,234.56
+PPaycheck
+LIncome:Salary
+^
+D03/15/2026
+T-25.50
+PCoffee Shop
+MCoffee with Sam
+^
+D03/17/2026
+T-100.00
+PUtility Co
+N1042
+^
+!Type:Invst
+D03/18/2026
+T-500.00
+PIndex Fund Buy
+^
